@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora de Salario-Seguros del Pacifico</title>
+  <link rel="stylesheet" href="CSS/Style.css">
+  <link rel="icon" href="IMG/Calculadora.png" type="image/png">
+</head>
+<body>
+  <div class="container">
+    <h1 id="titulo" class="title">Seguros del Pacifico</h1>
+    <h2 id="titulo" class="title">Calculadora de Salario</h2>
+    <label for="horasNormales" class="label">Horas Normales:</label>
+    <input type="number" id="horasNormales" class="input" placeholder="Ingrese las horas normales" inputmode="numeric" onwheel="this.blur()">
+    <label for="horasExtras" class="label">Horas Extras:</label>
+    <input type="number" id="horasExtras" class="input" placeholder="Ingrese las horas extras" inputmode="numeric" onwheel="this.blur()">
+    <button onclick="calcularSalario()" class="button">Calcular Salario</button>
+    <div id="resultado" class="result"></div>
+    <button onclick="imprimirBoucher()" class="button">Imprimir</button>
+    <p class="developer">Desarrollado por: Ubaldo Antonio Bermúdez Carrera</p>
+  </div>
+  <script src="JS/JavaScrip.js"></script>
+</body>
+</html>
